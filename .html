@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>⚠️ Your Team Might Destroy Everyone After This</title>
+    <title>The Secret to Explosive Social Media Growth</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -80,6 +80,23 @@
         .headline:hover {
             text-shadow: 0 4px 24px rgba(242,233,78,0.15);
         }
+        .star-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            object-fit: cover;
+            margin-left: -12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            background: #eee;
+        }
+        .star-avatar:first-child { margin-left: 0; }
+        .star-avatar-small {
+            width: 24px;
+            height: 24px;
+            margin-left: -8px;
+        }
+        .star-avatar-small:first-child { margin-left: 0; }
         .video-wrapper {
             position: relative;
             padding-bottom: 56.25%;
@@ -165,33 +182,6 @@
             transform: translateY(-2px) scale(1.04);
             box-shadow: 0 6px 24px rgba(74,78,105,0.18);
         }
-        .countdown {
-            position: static;
-            left: unset;
-            bottom: unset;
-            width: auto;
-            z-index: unset;
-            margin: 18px auto 0 auto;
-            text-align: center;
-            font-size: 1.2rem;
-            color: #fff;
-            font-weight: 700;
-            background: #e53935;
-            border-radius: 0;
-            padding: 18px 0 18px 0;
-            box-shadow: 0 2px 12px rgba(229,57,53,0.12);
-            letter-spacing: 1px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.25rem;
-            display: block;
-            pointer-events: auto;
-            max-width: 100vw;
-        }
-        .countdown span {
-            font-size: 1.3em;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
         .highlighted-text {
             margin: 22px auto 32px auto;
             text-align: center;
@@ -205,68 +195,6 @@
             box-shadow: 0 2px 18px rgba(242,233,78,0.13);
             border: 2px solid var(--accent);
             letter-spacing: 0.5px;
-        }
-        .dynamic-section, .dynamic-section + * {
-            display: none !important;
-        }
-        .dynamic-section h2 {
-            text-align: center;
-        }
-        .dynamic-steps {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            gap: 24px;
-            width: 100%;
-        }
-        .step-card {
-            background: var(--white);
-            color: var(--primary);
-            border-radius: 16px;
-            box-shadow: 0 4px 24px rgba(74,78,105,0.08);
-            padding: 24px 18px 18px 18px;
-            width: 220px;
-            min-height: 180px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            animation: floatCard 2.5s ease-in-out infinite alternate;
-            transition: transform 0.25s cubic-bezier(.77,0,.18,1), box-shadow 0.25s, background 0.25s;
-            perspective: none;
-            backface-visibility: visible;
-        }
-        .step-card:hover {
-            transform: scale(1.07);
-            box-shadow: 0 8px 32px rgba(74,78,105,0.18);
-            background: #f9fbe7;
-            z-index: 2;
-        }
-        .step-card img {
-            width: 56px;
-            height: 56px;
-            margin-bottom: 12px;
-            border-radius: 50%;
-            box-shadow: 0 2px 12px rgba(242,233,78,0.18);
-            animation: pulseImg 2s infinite alternate;
-        }
-        @keyframes pulseImg {
-            0% { box-shadow: 0 2px 12px rgba(242,233,78,0.18); }
-            100% { box-shadow: 0 8px 32px rgba(242,233,78,0.28); }
-        }
-        .step-title {
-            font-size: 1.15rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: var(--primary);
-            text-align: center;
-        }
-        .step-desc {
-            font-size: 1rem;
-            text-align: center;
-            color: var(--secondary);
         }
         section, .testimonials {
             margin: 0 auto 38px auto;
@@ -290,17 +218,6 @@
             box-shadow: 0 4px 24px rgba(0,0,0,0.18);
             transform: scale(1.10) translateY(-4px);
             cursor: pointer;
-        }
-        section ul, section ol {
-            margin-left: 18px;
-            margin-bottom: 12px;
-            text-align: center;
-            display: inline-block;
-        }
-        section li {
-            margin-bottom: 8px;
-            font-size: 1.05rem;
-            text-align: center;
         }
         .testimonials {
             padding: 24px 8px 32px 8px;
@@ -361,45 +278,6 @@
             opacity: 1;
             background: var(--primary);
         }
-        @media (max-width: 900px) {
-            .dynamic-steps { flex-direction: column; align-items: center; }
-            .step-card { width: 90vw; min-width: 0; }
-        }
-        @media (max-width: 600px) {
-            .container, section, .testimonials {
-                max-width: 98vw;
-                padding: 0 2vw;
-            }
-            .headline {
-                font-size: 1.5rem;
-            }
-            form {
-                padding: 12px 4px 8px 4px;
-            }
-            .highlighted-text {
-                font-size: 1rem;
-                padding: 10px 6px;
-            }
-            .dynamic-section { padding: 18px 4px 12px 4px; }
-        }
-        /* Remove list styles for clean, centered text blocks */
-        section#what-i-do ul,
-        section#how-to-start ol {
-            list-style: none;
-            padding-left: 0;
-            margin-left: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        section#what-i-do ul li,
-        section#how-to-start ol li {
-            text-align: center;
-            font-size: 1.08rem;
-            margin-bottom: 10px;
-            position: relative;
-            padding-left: 0;
-        }
         .final-cta-headline {
             text-align: center;
             font-size: 2rem;
@@ -440,23 +318,7 @@
             box-shadow: 0 2px 12px rgba(229,57,53,0.08);
             letter-spacing: 2px;
         }
-        .star-avatar {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            border: 2px solid #fff;
-            object-fit: cover;
-            margin-left: -12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            background: #eee;
-        }
-        .star-avatar:first-child { margin-left: 0; }
-        .star-avatar-small {
-            width: 24px;
-            height: 24px;
-            margin-left: -8px;
-        }
-        .star-avatar-small:first-child { margin-left: 0; }
+        /* Cool animated background shapes */
         .cool-bg-shape {
             position: fixed;
             z-index: 0;
@@ -476,6 +338,75 @@
             0% { transform: translateY(0) scale(1) rotate(0deg); }
             50% { transform: translateY(-30px) scale(1.08) rotate(10deg); }
             100% { transform: translateY(0) scale(1) rotate(0deg); }
+        }
+        /* MOBILE RESPONSIVE STYLES */
+        @media (max-width: 600px) {
+          .container, section, .testimonials {
+            max-width: 100vw;
+            padding: 0 2vw;
+          }
+          .headline {
+            font-size: 1.2rem;
+            margin-bottom: 18px;
+            padding: 0 2vw;
+          }
+          .star-rating-row {
+            gap: 6px !important;
+            margin-bottom: 10px !important;
+          }
+          .star-avatar, .star-avatar-small {
+            width: 18px !important;
+            height: 18px !important;
+            margin-left: -4px !important;
+          }
+          .video-wrapper {
+            border-radius: 10px;
+            margin-bottom: 16px;
+            max-width: 100vw;
+          }
+          .form-section, form {
+            max-width: 100vw;
+            padding: 8px 2vw !important;
+            border-radius: 8px;
+          }
+          input[type=\"text\"], input[type=\"email\"], input[type=\"tel\"] {
+            font-size: 0.95rem;
+            padding: 8px 8px;
+            border-radius: 6px;
+          }
+          .cta-btn, .final-cta-btn {
+            font-size: 1rem;
+            padding: 10px 0;
+            border-radius: 8px;
+          }
+          .highlighted-text {
+            font-size: 0.95rem;
+            padding: 8px 4px;
+            border-radius: 8px;
+            max-width: 98vw;
+          }
+          .final-cta-headline {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+          }
+          .final-timer {
+            font-size: 1rem;
+            width: 80px;
+            padding: 6px 0;
+            border-radius: 6px;
+          }
+          .testimonial img {
+            width: 32px !important;
+            height: 32px !important;
+          }
+          .testimonial {
+            font-size: 0.95rem;
+            padding: 0 2vw;
+          }
+          .cool-bg-shape {
+            width: 40px !important;
+            height: 40px !important;
+          }
         }
     </style>
 </head>
@@ -502,7 +433,6 @@
                 <span style="font-size:1.1rem;color:#FFD700;">★</span>
                 <span style="font-size:1.1rem;color:#FFD700;">★</span>
             </div>
-            <span style="font-size:0.95rem;color:#222;margin-left:7px;">4.9-star ratings from dozens of clients</span>
         </div>
         <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/5wAmJMwUrxY" title="YouTube video" allowfullscreen></iframe>
@@ -552,7 +482,6 @@
         <div class="testimonial-controls" id="testimonialControls"></div>
     </div>
 
-    <!-- Call to Action Section at the end -->
     <section id="final-cta-section">
         <h2 class="final-cta-headline">🔥 Take Action Before It's Gone.</h2>
         <button class="final-cta-btn" onclick="document.getElementById('leadForm').scrollIntoView({behavior: 'smooth'});">Book Now</button>
